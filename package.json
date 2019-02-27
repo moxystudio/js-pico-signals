@@ -1,6 +1,6 @@
 {
   "name": "pico-signals",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A very simple signal library inspired by the 'signals' package",
   "keywords": [
     "pico",
