@@ -31,27 +31,27 @@ If you target older browsers please make sure to transpile accordingly.
 ## Usage
 
 ```js
-import picoSignals from 'pico-signals';
+import signal from 'pico-signals';
 
-const listener1 = () => console.log('Listener 1');
-const listener2 = () => console.log('Listener 2');
+const listener1 = () => console.log('Listener1');
+const listener2 = () => console.log('Listener2');
 
-const ps = picoSignals();
+const mySignal = signal();
 
-const removeListener1 = ps.add(listener1);
-const removeListener2 = ps.add(listener2);
+const removeListener1 = mySignal.add(listener1);
+const removeListener2 = mySignal.add(listener2);
 
-ps.dispatch('foo', 'bar');
+mySignal.dispatch('foo', 'bar');
 //=> Both listeners will be called and both logs produced.
 //=> Every listener will receive the same arguments provided in the dispatch method.
 
 removeListener2();
 //=> Deletes `listener2` from the listeners list;
 
-ps.dispatch();
+mySignal.dispatch();
 //=> Only `listener1` will be called since its currently the only listener on the list.
 
-ps.clear();
+mySignal.clear();
 //=> Clears all listeners.
 ```
 
