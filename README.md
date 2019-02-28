@@ -23,7 +23,7 @@ A very simple signal library inspired by the [signals](https://github.com/miller
 $ npm install pico-signals
 ```
 
-This library is written in modern JavaScript and is published with both CommonJS and ES module transpiled variants.
+This library is written in modern JavaScript and is published in both CommonJS and ES module transpiled variants.
 
 If you target older browsers please make sure to transpile accordingly. 
 
