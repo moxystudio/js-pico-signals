@@ -36,7 +36,7 @@ import signal from 'pico-signals';
 const listener1 = () => console.log('Listener1');
 const listener2 = () => console.log('Listener2');
 
-const mySignal = signal();
+const mySignal = new signal();
 
 const removeListener1 = mySignal.add(listener1);
 const removeListener2 = mySignal.add(listener2);
