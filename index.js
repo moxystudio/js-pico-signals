@@ -1,4 +1,4 @@
-class PicoSignals {
+export default class PicoSignals {
     listeners = new Set();
 
     add(listener) {
@@ -19,7 +19,3 @@ class PicoSignals {
         this.listeners.forEach((listener) => listener(...args));
     }
 }
-
-const createPicoSignals = () => new PicoSignals();
-
-export default createPicoSignals;
