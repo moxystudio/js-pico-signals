@@ -1,7 +1,7 @@
 import picoSignals from '../index';
 
 it('should have all methods', () => {
-    const instance = picoSignals();
+    const instance = new picoSignals();
 
     expect(typeof instance.add).toEqual('function');
     expect(typeof instance.delete).toEqual('function');
@@ -10,7 +10,7 @@ it('should have all methods', () => {
 });
 
 it('should add listener and provide method to delete it', () => {
-    const instance = picoSignals();
+    const instance = new picoSignals();
     const mockListener = jest.fn();
 
     const deleteListener = instance.add(mockListener);
@@ -24,7 +24,7 @@ it('should add listener and provide method to delete it', () => {
 });
 
 it('should delete listener', () => {
-    const instance = picoSignals();
+    const instance = new picoSignals();
     const mockListener = jest.fn();
 
     instance.add(mockListener);
@@ -37,7 +37,7 @@ it('should delete listener', () => {
 });
 
 it('should clear all listeners', () => {
-    const instance = picoSignals();
+    const instance = new picoSignals();
 
     instance.add(() => jest.fn());
     instance.add(() => jest.fn());
@@ -50,7 +50,7 @@ it('should clear all listeners', () => {
 });
 
 it('should call every listener on dispatch', () => {
-    const instance = picoSignals();
+    const instance = new picoSignals();
     const mockListener1 = jest.fn();
     const mockListener2 = jest.fn();
 
