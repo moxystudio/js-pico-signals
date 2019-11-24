@@ -6,7 +6,7 @@
 [downloads-image]:https://img.shields.io/npm/dm/pico-signals.svg
 [npm-image]:https://img.shields.io/npm/v/pico-signals.svg
 [travis-url]:https://travis-ci.org/moxystudio/js-pico-signals
-[travis-image]:http://img.shields.io/travis/moxystudio/js-pico-signals/master.svg
+[travis-image]:https://img.shields.io/travis/moxystudio/js-pico-signals/master.svg
 [codecov-url]:https://codecov.io/gh/moxystudio/js-pico-signals
 [codecov-image]:https://img.shields.io/codecov/c/github/moxystudio/js-pico-signals/master.svg
 [david-dm-url]:https://david-dm.org/moxystudio/js-pico-signals
@@ -96,5 +96,5 @@ $ npm test -- --watch # during development
 
 ## License
 
-Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+Released under the [MIT License](https://www.opensource.org/licenses/mit-license.php).
 
